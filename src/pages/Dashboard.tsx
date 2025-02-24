@@ -23,7 +23,7 @@ const Dashboard = () => {
     <DashboardLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="text-3xl font-bold mb-2">Welcome back!</h1>
+          <h1 className="text-3xl font-bold mb-2">Welcome to your <span className="text-accent">Dashboard</span></h1>
           <p className="text-muted-foreground">Here's an overview of your content</p>
         </div>
 
@@ -52,7 +52,7 @@ const Dashboard = () => {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold mb-4">Recent Videos</h2>
+          <h2 className="text-xl font-semibold mb-4">Recent <span className="text-accent">Videos</span></h2>
           <div className="grid gap-4">
             {recentVideos.map((video) => (
               <Card key={video.title}>

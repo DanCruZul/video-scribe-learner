@@ -74,7 +74,9 @@ const UploadPage = () => {
     <DashboardLayout>
       <div className="max-w-4xl mx-auto space-y-8">
         <div>
-          <h1 className="text-3xl font-bold mb-2">Upload Content</h1>
+          <h1 className="text-3xl font-bold mb-2">
+            Upload <span className="text-accent">Content</span>
+          </h1>
           <p className="text-muted-foreground">Convert your text content into engaging videos</p>
         </div>
 

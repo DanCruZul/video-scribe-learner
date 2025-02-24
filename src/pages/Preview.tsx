@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { play, pause, edit, save, download } from 'lucide-react';
+import { Play, Pause, Edit, Save, Download } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const PreviewPage = () => {
@@ -44,7 +44,9 @@ const PreviewPage = () => {
     <DashboardLayout>
       <div className="max-w-6xl mx-auto space-y-8">
         <div>
-          <h1 className="text-3xl font-bold mb-2">Video Preview</h1>
+          <h1 className="text-3xl font-bold mb-2">
+            Video <span className="text-accent">Preview</span>
+          </h1>
           <p className="text-muted-foreground">Review and edit your generated video</p>
         </div>
 
@@ -66,9 +68,9 @@ const PreviewPage = () => {
                     onClick={handlePlayPause}
                   >
                     {isPlaying ? (
-                      <pause className="h-6 w-6" />
+                      <Pause className="h-6 w-6" />
                     ) : (
-                      <play className="h-6 w-6" />
+                      <Play className="h-6 w-6" />
                     )}
                   </Button>
                   
@@ -92,7 +94,7 @@ const PreviewPage = () => {
                 className="gap-2"
                 onClick={handleEdit}
               >
-                <edit className="h-4 w-4" />
+                <Edit className="h-4 w-4" />
                 Edit Video
               </Button>
               
@@ -101,7 +103,7 @@ const PreviewPage = () => {
                 className="gap-2"
                 onClick={handleSave}
               >
-                <save className="h-4 w-4" />
+                <Save className="h-4 w-4" />
                 Save Changes
               </Button>
               
@@ -109,7 +111,7 @@ const PreviewPage = () => {
                 className="gap-2"
                 onClick={handleDownload}
               >
-                <download className="h-4 w-4" />
+                <Download className="h-4 w-4" />
                 Download Video
               </Button>
             </div>
