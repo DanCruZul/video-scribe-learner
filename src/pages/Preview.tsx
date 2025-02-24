@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Play, Pause, Edit, Save, Download } from 'lucide-react';
+import { play, pause, edit, save, download } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const PreviewPage = () => {
@@ -66,9 +66,9 @@ const PreviewPage = () => {
                     onClick={handlePlayPause}
                   >
                     {isPlaying ? (
-                      <Pause className="h-6 w-6" />
+                      <pause className="h-6 w-6" />
                     ) : (
-                      <Play className="h-6 w-6" />
+                      <play className="h-6 w-6" />
                     )}
                   </Button>
                   
@@ -92,7 +92,7 @@ const PreviewPage = () => {
                 className="gap-2"
                 onClick={handleEdit}
               >
-                <Edit className="h-4 w-4" />
+                <edit className="h-4 w-4" />
                 Edit Video
               </Button>
               
@@ -101,7 +101,7 @@ const PreviewPage = () => {
                 className="gap-2"
                 onClick={handleSave}
               >
-                <Save className="h-4 w-4" />
+                <save className="h-4 w-4" />
                 Save Changes
               </Button>
               
@@ -109,7 +109,7 @@ const PreviewPage = () => {
                 className="gap-2"
                 onClick={handleDownload}
               >
-                <Download className="h-4 w-4" />
+                <download className="h-4 w-4" />
                 Download Video
               </Button>
             </div>
